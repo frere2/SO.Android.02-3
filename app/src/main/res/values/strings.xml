@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">br.edu.fateczl.soex02</string>
+    <string name="A">Insira o primeiro número</string>
+    <string name="B">Insira o segundo número</string>
+    <string name="exibir">Exibir Maior</string>
+    <string name="calcular">Somar</string>
+</resources>

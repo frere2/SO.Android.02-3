@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="42dp">
+
+    <Button
+        android:id="@+id/calcButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="26dp"
+        android:text="@string/calcular"
+        app:layout_constraintEnd_toEndOf="@+id/ResultadoSoma"
+        app:layout_constraintTop_toBottomOf="@+id/BValor" />
+
+    <EditText
+        android:id="@+id/AValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:ems="10"
+        android:hint="@string/A"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/BValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:ems="10"
+        android:hint="@string/B"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/AValor"
+        app:layout_constraintTop_toBottomOf="@+id/AValor" />
+
+    <Button
+        android:id="@+id/exibirMaiorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="61dp"
+        android:text="@string/exibir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BValor" />
+
+    <TextView
+        android:id="@+id/ResultadoSoma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/ResultadoMaior"
+        app:layout_constraintStart_toStartOf="@+id/ResultadoMaior"
+        app:layout_constraintTop_toBottomOf="@+id/exibirMaiorButton" />
+
+    <TextView
+        android:id="@+id/ResultadoMaior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="21dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/exibirMaiorButton"
+        app:layout_constraintTop_toBottomOf="@+id/ResultadoSoma" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
